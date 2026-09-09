@@ -1,0 +1,56 @@
+
+:root {
+  --primary: #0E3B2E;
+  --secondary: #E8DCC6;
+  --accent: #FF4D23;
+  --text: #1A1E1D;
+  --bg: #FFFBF5;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.top {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: 1rem 1.5rem; border-bottom: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+  background: #fff;
+}
+.brand { font-weight: 700; color: var(--primary); text-decoration: none; font-size: 1.15rem; }
+nav { display: flex; gap: 0.9rem; flex: 1; }
+nav a { color: var(--text); text-decoration: none; opacity: 0.85; font-size: 0.95rem; }
+.cta {
+  background: var(--primary); color: #fff; text-decoration: none;
+  padding: 0.45rem 0.85rem; border-radius: 4px; font-weight: 600;
+}
+.hero {
+  min-height: 68vh; display: grid; align-items: end;
+  padding: 3rem 1.5rem 2.5rem;
+  background:
+    linear-gradient(120deg, color-mix(in srgb, var(--primary) 88%, #000), color-mix(in srgb, var(--primary) 55%, var(--accent))),
+    radial-gradient(800px 400px at 80% 10%, color-mix(in srgb, var(--accent) 35%, transparent), transparent);
+  color: #f7fffb;
+}
+.hero h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin: 0 0 0.6rem; max-width: 14ch; letter-spacing: -0.02em;
+}
+.hero p { max-width: 36rem; opacity: 0.92; line-height: 1.5; }
+.hero .actions { margin-top: 1.2rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.hero .actions a {
+  background: var(--accent); color: #1a1408; text-decoration: none;
+  padding: 0.65rem 1rem; font-weight: 700; border-radius: 4px;
+}
+.hero .actions a.ghost { background: transparent; color: #fff; border: 1px solid #fff; }
+section.wrap { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.card {
+  background: #fff; border: 1px solid color-mix(in srgb, var(--primary) 15%, #ddd);
+  border-radius: 8px; padding: 1rem;
+}
+.card h3 { margin: 0 0 0.35rem; color: var(--primary); }
+.muted { opacity: 0.7; }
+footer { padding: 2rem 1.25rem; border-top: 1px solid #ddd; margin-top: 2rem; }
