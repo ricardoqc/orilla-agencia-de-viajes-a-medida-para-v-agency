@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "files_touched": [
+    "public/data/tours.json",
+    "public/tours.html",
+    "public/tours.js",
+    "public/reserva.html",
+    "public/feature.css",
+    "public/tours-cusco-valle-sagrado.html",
+    "public/tours-machu-picchu-pausado.html",
+    "public/tours-arequipa-colca.html",
+    "public/tours-amazonia-tambopata.html",
+    "public/tours-lago-titicaca.html",
+    "public/tours-lima-gastronomica.html",
+    "public/tours-ausangate-trek.html",
+    "public/tours-norte-moche.html",
+    "server.js"
+  ],
+  "items": 5,
+  "engine": "feature-kit",
+  "changed_files": 14,
+  "kind": "feature",
+  "feature_kind": "feature-tours",
+  "stitch_project": null,
+  "notes": "FEATURE (Express public/, sin Astro/Next):\n1) /tours — listado con cards, destino, duración, estilo, precio\n2) Filtros client-side (destino, duración, estilo, precio)\n3) /tours/<slug> — ficha con itinerario, incluye/no incluye, CTA reserva\n4) /reserva — form → POST /api/reserva stub + WhatsApp\n5) public/data/tours.json (6–8 tours Perú)\n6) Nav mobile-first; colores ORILLA; no plantilla Agency"
+}

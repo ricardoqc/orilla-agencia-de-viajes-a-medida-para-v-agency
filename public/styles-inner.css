@@ -1,0 +1,14 @@
+
+:root{--p:#0E3B2E;--bg:#FFFBF5;--t:#1A1E1D}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Source Serif 4",serif;background:var(--bg);color:var(--t)}
+.bar{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;padding:1rem 1.2rem;background:#fff;border-bottom:1px solid #e6ddd0}
+.brand{font-weight:700;color:var(--p);text-decoration:none}
+nav{display:flex;gap:.7rem;flex:1;flex-wrap:wrap}
+nav a{color:var(--t);text-decoration:none;opacity:.8;font-size:.92rem}
+.cta{background:var(--p);color:#fff;text-decoration:none;padding:.5rem .85rem;border-radius:4px;font-weight:700}
+main{max-width:42rem;margin:2rem auto;padding:0 1.2rem}
+.eyebrow{opacity:.7;letter-spacing:.04em;text-transform:uppercase;font-size:.75rem}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:-.02em;margin:.2rem 0 1rem}
+footer{padding:2rem 1.2rem;border-top:1px solid #e6ddd0;margin-top:3rem;opacity:.75}
+@media(max-width:640px){.bar{padding:.85rem}nav{order:3;width:100%}}

@@ -1,0 +1,38 @@
+
+:root{
+  --primary:#0E3B2E;
+  --secondary:#E8DCC6;
+  --accent:#FF4D23;
+  --text:#1A1E1D;
+  --bg:#FFFBF5;
+}
+.feat-top{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;padding:1rem 1.25rem;
+  background:color-mix(in srgb,var(--bg) 90%,#fff);border-bottom:1px solid #e6ddd0;position:sticky;top:0;z-index:5}
+.feat-top .brand{font-weight:700;color:var(--primary);text-decoration:none}
+.feat-top nav{display:flex;gap:.85rem;flex:1;flex-wrap:wrap}
+.feat-top nav a{text-decoration:none;opacity:.85}
+.feat-wrap{max-width:1080px;margin:0 auto;padding:1.5rem 1.2rem 2.5rem}
+.feat-hero{padding:2.2rem 1.2rem;background:linear-gradient(140deg,color-mix(in srgb,var(--primary) 88%,#000),color-mix(in srgb,var(--primary) 50%,var(--accent)));color:#fff}
+.feat-hero h1{margin:0 0 .5rem;font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:-.02em}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;margin:1rem 0 1.4rem}
+.filters label{display:flex;flex-direction:column;gap:.25rem;font-size:.82rem;opacity:.9}
+.filters select,.filters input,.feat-form input,.feat-form select,.feat-form textarea{
+  border:1px solid #d9d0c4;border-radius:6px;padding:.5rem .55rem;font:inherit;background:#fff;color:var(--text)}
+.tour-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.tour-card{background:#fff;border:1px solid #e5ddd2;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.tour-card .thumb{height:140px;background:linear-gradient(135deg,var(--secondary),color-mix(in srgb,var(--primary) 35%,#fff))}
+.tour-card .body{padding:1rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+.tour-card h3{margin:0;font-size:1.1rem}
+.tour-card .meta{font-size:.86rem;opacity:.75}
+.tour-card .price{font-weight:700;color:var(--primary)}
+.tour-card a.more{margin-top:auto;text-decoration:none;color:#fff;background:var(--primary);
+  text-align:center;padding:.55rem;border-radius:6px;font-weight:600}
+.hidden{display:none !important}
+.chip{display:inline-block;padding:.15rem .45rem;border-radius:999px;background:var(--secondary);font-size:.75rem;margin-right:.25rem}
+.feat-form{display:grid;gap:.75rem;max-width:32rem}
+.feat-form button{border:0;background:var(--primary);color:#fff;padding:.7rem 1rem;border-radius:6px;font-weight:700;cursor:pointer}
+.feat-footer{padding:2rem 1.25rem;border-top:1px solid #e5ddd2;margin-top:2rem}
+#wa-float{position:fixed;right:1rem;bottom:1rem;background:var(--primary);color:#fff;padding:.65rem .95rem;
+  border-radius:999px;text-decoration:none;font-weight:700;z-index:30;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.muted{opacity:.72}
+@media(max-width:700px){.feat-top nav{order:3;width:100%}}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reserva — ORILLA</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/feature.css" />
+</head>
+<body data-brand="ORILLA">
+  <header class="top feat-top">
+    <a class="brand" href="/">ORILLA</a>
+    <nav><a href="/">Inicio</a><a href="/tours">Tours</a><a href="/reserva">Reserva</a><a href="/contacto">Contacto</a></nav>
+    <a class="cta" href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+  
+  <section class="feat-wrap">
+    <h1>Reserva</h1>
+    <p class="muted">Formulario MVP: guardamos el lead en el servidor y te ofrecemos WhatsApp.</p>
+    <form class="feat-form" id="reserva-form">
+      <label>Nombre <input name="name" required /></label>
+      <label>Email <input name="email" type="email" required /></label>
+      <label>Tour
+        <select name="tour" id="tour-select"><option value="cusco-valle-sagrado">Cusco & Valle Sagrado</option><option value="machu-picchu-pausado">Machu Picchu pausado</option><option value="arequipa-colca">Arequipa & Colca</option><option value="amazonia-tambopata">Amazonía Tambopata</option><option value="lago-titicaca">Lago Titicaca</option><option value="lima-gastronomica">Lima gastronómica</option><option value="ausangate-trek">Ausangate trek corto</option><option value="norte-moche">Norte Moche</option></select>
+      </label>
+      <label>Personas <input name="people" type="number" min="1" value="2" required /></label>
+      <label>Fechas tentativas <input name="dates" placeholder="ej. 12–18 oct" /></label>
+      <label>Notas <textarea name="notes" rows="3"></textarea></label>
+      <button type="submit">Enviar reserva</button>
+      <p id="reserva-msg" class="muted"></p>
+    </form>
+  </section>
+  <script>
+  const params = new URLSearchParams(location.search);
+  if (params.get('tour')) {
+    const sel = document.getElementById('tour-select');
+    if ([...sel.options].some(o => o.value === params.get('tour'))) sel.value = params.get('tour');
+  }
+  document.getElementById('reserva-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const body = Object.fromEntries(fd.entries());
+    const msg = document.getElementById('reserva-msg');
+    msg.textContent = 'Enviando…';
+    try {
+      const r = await fetch('/api/reserva', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(body)
+      });
+      const data = await r.json();
+      msg.textContent = 'Reserva registrada. Puedes continuar por WhatsApp.';
+      if (data.whatsapp) {
+        const a = document.createElement('a');
+        a.href = data.whatsapp + '?text=' + encodeURIComponent('Hola, quiero reservar: ' + (body.tour||''));
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = ' Abrir WhatsApp';
+        msg.appendChild(a);
+      }
+    } catch (err) {
+      msg.textContent = 'Error al enviar. Intenta WhatsApp directo.';
+    }
+  });
+  </script>
+
+  <footer class="feat-footer">
+    <p><strong>ORILLA</strong></p>
+    <p class="muted">Viaja menos lejos. Llega más hondo.</p>
+  </footer>
+  <a id="wa-float" href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>

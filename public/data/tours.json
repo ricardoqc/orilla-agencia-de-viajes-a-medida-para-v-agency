@@ -1,0 +1,226 @@
+[
+  {
+    "slug": "cusco-valle-sagrado",
+    "title": "Cusco & Valle Sagrado",
+    "days": 5,
+    "price": 890,
+    "destination": "Cusco",
+    "style": "cultural",
+    "tags": [
+      "cultura",
+      "andes",
+      "suave"
+    ],
+    "summary": "Lectura lenta del Cusco colonial y pueblos del valle, sin prisa.",
+    "includes": [
+      "Guía local",
+      "3 hoteles boutique",
+      "Desayunos"
+    ],
+    "excludes": [
+      "Vuelos",
+      "Almuerzos"
+    ],
+    "itinerary": [
+      "Día 1 — Llegada y barrio San Blas",
+      "Día 2 — Pisac y mercado",
+      "Día 3 — Ollantaytambo",
+      "Día 4 — Chinchero + textiles",
+      "Día 5 — Retorno"
+    ]
+  },
+  {
+    "slug": "machu-picchu-pausado",
+    "title": "Machu Picchu pausado",
+    "days": 4,
+    "price": 1120,
+    "destination": "Cusco",
+    "style": "iconico",
+    "tags": [
+      "machu picchu",
+      "tren",
+      "medio"
+    ],
+    "summary": "Acceso a la ciudadela con noches en Aguas Calientes y ritmo humano.",
+    "includes": [
+      "Tren",
+      "Entrada MP",
+      "Guía"
+    ],
+    "excludes": [
+      "Propinas"
+    ],
+    "itinerary": [
+      "Día 1 — Cusco a Ollantaytambo",
+      "Día 2 — Tren + MP tarde",
+      "Día 3 — Amanecer opcional + retorno",
+      "Día 4 — Buffer / vuelo"
+    ]
+  },
+  {
+    "slug": "arequipa-colca",
+    "title": "Arequipa & Colca",
+    "days": 4,
+    "price": 760,
+    "destination": "Arequipa",
+    "style": "naturaleza",
+    "tags": [
+      "cañón",
+      "cóndores",
+      "suave"
+    ],
+    "summary": "Ciudad blanca, miradores del Colca y cóndores al amanecer.",
+    "includes": [
+      "Transporte",
+      "Hotel 3★",
+      "Guía"
+    ],
+    "excludes": [
+      "Cenas"
+    ],
+    "itinerary": [
+      "Día 1 — Arequipa centro",
+      "Día 2 — Subida a Chivay",
+      "Día 3 — Cruz del Cóndor",
+      "Día 4 — Retorno"
+    ]
+  },
+  {
+    "slug": "amazonia-tambopata",
+    "title": "Amazonía Tambopata",
+    "days": 4,
+    "price": 980,
+    "destination": "Madre de Dios",
+    "style": "naturaleza",
+    "tags": [
+      "selva",
+      "lodge",
+      "medio"
+    ],
+    "summary": "Lodge en selva baja, quebradas y avistamiento nocturno.",
+    "includes": [
+      "Lodge",
+      "Comidas",
+      "Excursiones"
+    ],
+    "excludes": [
+      "Vuelo LIM-PEM"
+    ],
+    "itinerary": [
+      "Día 1 — Puerto Maldonado → lodge",
+      "Día 2 — Caoba / lagunas",
+      "Día 3 — Collpa + noche",
+      "Día 4 — Retorno"
+    ]
+  },
+  {
+    "slug": "lago-titicaca",
+    "title": "Lago Titicaca",
+    "days": 3,
+    "price": 540,
+    "destination": "Puno",
+    "style": "cultural",
+    "tags": [
+      "lago",
+      "uros",
+      "suave"
+    ],
+    "summary": "Uros, Taquile y noches a orillas del lago sagrado.",
+    "includes": [
+      "Boat",
+      "Guía",
+      "Hotel"
+    ],
+    "excludes": [
+      "Almuerzos"
+    ],
+    "itinerary": [
+      "Día 1 — Puno + Uros",
+      "Día 2 — Taquile",
+      "Día 3 — Salida"
+    ]
+  },
+  {
+    "slug": "lima-gastronomica",
+    "title": "Lima gastronómica",
+    "days": 3,
+    "price": 620,
+    "destination": "Lima",
+    "style": "gastronomia",
+    "tags": [
+      "comida",
+      "ciudad",
+      "suave"
+    ],
+    "summary": "Mercados, cevicherías y barrios con criterio editorial.",
+    "includes": [
+      "2 experiencias food",
+      "Guía"
+    ],
+    "excludes": [
+      "Cenas libres"
+    ],
+    "itinerary": [
+      "Día 1 — Barranco + museo",
+      "Día 2 — Mercado + ceviche",
+      "Día 3 — Miraflores / salida"
+    ]
+  },
+  {
+    "slug": "ausangate-trek",
+    "title": "Ausangate trek corto",
+    "days": 4,
+    "price": 1350,
+    "destination": "Cusco",
+    "style": "aventura",
+    "tags": [
+      "trek",
+      "altura",
+      "exigente"
+    ],
+    "summary": "Travesía corta alrededor del Apu con campamentos asistidos.",
+    "includes": [
+      "Muleros",
+      "Comidas trek",
+      "Guía de montaña"
+    ],
+    "excludes": [
+      "Equipo personal"
+    ],
+    "itinerary": [
+      "Día 1 — Traslado + aclimatación",
+      "Día 2 — Trek alto",
+      "Día 3 — Laguna / paso",
+      "Día 4 — Descenso"
+    ]
+  },
+  {
+    "slug": "norte-moche",
+    "title": "Norte Moche",
+    "days": 5,
+    "price": 870,
+    "destination": "Trujillo",
+    "style": "cultural",
+    "tags": [
+      "arqueología",
+      "costa",
+      "medio"
+    ],
+    "summary": "Huacas, Chan Chan y costa norte con lectura histórica.",
+    "includes": [
+      "Guía",
+      "Entradas",
+      "Hotel"
+    ],
+    "excludes": [
+      "Vuelos"
+    ],
+    "itinerary": [
+      "Día 1 — Trujillo",
+      "Día 2 — Huaca de la Luna",
+      "Día 3 — Chan Chan",
+      "Día 4 — Huanchaco",
+      "Día 5 — Salida"
+    ]
+  }
+]

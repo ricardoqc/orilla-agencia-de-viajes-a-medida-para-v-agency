@@ -1,40 +1,406 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home — ORILLA</title>
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
-  <header class="top">
-    <a class="brand" href="/">ORILLA</a>
-    <nav><a href="/">Home</a><a href="/colecciones">Colecciones (por Estilo)</a><a href="/colecciones/[slug]">Detalle Colección / Itinerario</a><a href="/a-medida">A Medida (Presupuesto)</a><a href="/diario">Diario / Journal</a><a href="/sobre-nosotros">Sobre ORILLA</a><a href="/contacto">Contacto</a></nav>
-    <a class="cta" href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp</a>
-  </header>
-  
-  <section class="hero">
-    <div>
-      <h1>ORILLA</h1>
-      <p>Viaja menos lejos. Llega más hondo.. Transmitir criterio y convertir a 'Diseña mi viaje' en <15s. Hero con viaje del mes, 3 estilos de viaje, proof (testimonios reales + logos prensa).</p>
-      <div class="actions">
-        <a href="https://wa.me/51999999999" target="_blank" rel="noopener">Agendar por WhatsApp</a>
-        <a class="ghost" href="/servicios">Ver tratamientos</a>
-      </div>
-    </div>
-  </section>
-  <section class="wrap">
-    <h2>Por qué elegirnos</h2>
-    <div class="grid">
-      <div class="card"><h3>Equipo</h3><p>Especialistas y atención cercana.</p></div>
-      <div class="card"><h3>Tecnología</h3><p>Diagnóstico claro y tratamientos modernos.</p></div>
-      <div class="card"><h3>Cusco</h3><p>Citas ágiles y seguimiento local.</p></div>
-    </div>
-  </section>
 
-  <footer>
-    <p>ORILLA · MVP Agent Agency</p>
-    <p class="muted">Viaja menos lejos. Llega más hondo.</p>
-  </footer>
-</body>
-</html>
+<html class="h-full" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ORILLA — Viajes de autor y lectura lenta</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00241a",
+            "secondary-container": "#db3407",
+            "inverse-primary": "#a3d0be",
+            "on-primary-fixed": "#002117",
+            "surface-container": "#ecefec",
+            "error": "#ba1a1a",
+            "surface-tint": "#3c6657",
+            "inverse-on-surface": "#eef1ef",
+            "surface": "#f7faf8",
+            "on-secondary-fixed": "#3d0700",
+            "on-secondary-container": "#fffbff",
+            "tertiary-fixed-dim": "#d1c5b0",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#244e40",
+            "surface-container-high": "#e6e9e7",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#a59b87",
+            "surface-variant": "#e0e3e1",
+            "surface-container-highest": "#e0e3e1",
+            "primary-fixed-dim": "#a3d0be",
+            "on-secondary-fixed-variant": "#8b1b00",
+            "primary-container": "#0e3b2e",
+            "secondary-fixed": "#ffdad2",
+            "on-background": "#181c1b",
+            "surface-dim": "#d8dbd9",
+            "secondary-fixed-dim": "#ffb4a3",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#7aa694",
+            "on-tertiary-fixed": "#211b0d",
+            "secondary": "#b12500",
+            "on-surface": "#181c1b",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#3a3324",
+            "outline-variant": "#c0c8c3",
+            "primary-fixed": "#bfecd9",
+            "on-surface-variant": "#414845",
+            "on-tertiary-fixed-variant": "#4d4636",
+            "tertiary": "#241e10",
+            "inverse-surface": "#2d3130",
+            "outline": "#717974",
+            "surface-bright": "#f7faf8",
+            "on-primary": "#ffffff",
+            "on-error-container": "#93000a",
+            "background": "#f7faf8",
+            "tertiary-fixed": "#ede1cb",
+            "surface-container-low": "#f1f4f2"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "gutter-md": "1.5rem",
+            "column-gap": "1.5rem",
+            "gutter-lg": "3rem",
+            "gutter-sm": "0.75rem",
+            "layout-margin": "2rem"
+          },
+          fontFamily: {
+            "body-lg": ["Newsreader"],
+            "label-md": ["\"Source Sans 3\""],
+            "headline-sm": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "headline-lg": ["Newsreader"],
+            "body-sm": ["Newsreader"],
+            "headline-xl": ["Newsreader"],
+            "body-md": ["Newsreader"],
+            "label-sm": ["\"Source Sans 3\""]
+          },
+          fontSize: {
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+            "headline-sm": ["22px", { lineHeight: "28px", fontWeight: "400" }],
+            "headline-md": ["28px", { lineHeight: "36px", fontWeight: "400" }],
+            "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+            "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #FFFBF5;
+      color: #1A1E1D;
+      font-family: 'Newsreader', serif;
+    }
+  </style>
+<link rel="stylesheet" href="/feature.css" />
+</head>
+<body class="bg-[#FFFBF5] text-[#1A1E1D] flex flex-col min-h-full antialiased selection:bg-[#E8DCC6] selection:text-[#0E3B2E]">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 relative bg-[#FFFBF5]/90 backdrop-blur-md border-b border-[#0E3B2E]/10">
+<div class="flex justify-between items-center w-full px-4 md:px-layout-margin py-gutter-sm max-w-[1200px] mx-auto">
+<a class="text-headline-md font-headline-md font-normal text-[#0E3B2E] tracking-widest" href="#">ORILLA</a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8 font-label-md">
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="#manifiesto">Manifiesto</a>
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="#ediciones">Ediciones</a>
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="#diario">Diario</a>
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="/tours">Tours</a>
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="/reserva">Reserva</a>
+<a class="text-on-surface hover:text-[#b12500] transition-colors" href="#contacto">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center gap-2 bg-[#0E3B2E] text-[#ffffff] px-4 py-2 rounded-lg font-label-md hover:bg-[#00241a] transition-all" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="md:hidden text-[#0E3B2E] p-1" id="menu-btn">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Nav Menu -->
+<div class="hidden absolute top-full left-0 w-full bg-[#FFFBF5] border-b border-[#0E3B2E]/10 px-6 py-6 flex flex-col gap-4 font-label-md shadow-lg z-50" id="mobile-menu">
+<a class="mobile-link text-on-surface py-2" href="#manifiesto">Manifiesto</a>
+<a class="mobile-link text-on-surface py-2" href="#ediciones">Ediciones</a>
+<a class="mobile-link text-on-surface py-2" href="#diario">Diario</a>
+<a class="mobile-link text-on-surface py-2" href="/tours">Tours</a>
+<a class="mobile-link text-on-surface py-2" href="/reserva">Reserva</a>
+<a class="mobile-link text-on-surface py-2" href="#contacto">Contacto</a>
+<a class="inline-flex justify-center items-center gap-2 bg-[#0E3B2E] text-[#ffffff] px-4 py-3 rounded-lg font-label-md mt-2" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Escríbenos por WhatsApp</span>
+</a>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center justify-center px-4 md:px-layout-margin py-16 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-15 pointer-events-none bg-[radial-gradient(#0E3B2E_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-[900px] mx-auto text-center z-10 flex flex-col items-center">
+<div class="inline-flex items-center gap-2 bg-[#E8DCC6]/60 text-[#0E3B2E] px-4 py-1.5 rounded-full font-label-md mb-8 border border-[#0E3B2E]/10">
+<span class="material-symbols-outlined text-[16px]">nest_eco_leaf</span>
+<span>Agencia de viajes de autor y lectura lenta</span>
+</div>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-headline-lg text-[#0E3B2E] tracking-tight mb-6 leading-[1.1]">
+        Viaja menos lejos. <br/><span class="italic font-light">Llega más hondo.</span>
+</h1>
+<p class="text-lg md:text-xl text-[#414845] font-body-lg max-w-2xl mb-10 leading-relaxed">
+        Curaduría de experiencias itinerantes donde el tiempo recupera su espesor. Itinerarios concebidos como libros abiertos, habitados por el silencio, el territorio y la conversación pausada.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto bg-[#FF4D23] text-white px-8 py-4 rounded-lg font-label-md text-center hover:bg-[#b12500] transition-all shadow-sm" href="#contacto">
+          Diseña mi viaje
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-[#0E3B2E]/30 text-[#0E3B2E] px-8 py-4 rounded-lg font-label-md hover:bg-[#0E3B2E]/5 transition-all" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Consulta directa</span>
+</a>
+</div>
+</div>
+</section>
+<!-- El Viaje del Mes -->
+<section class="py-20 px-4 md:px-layout-margin bg-[#f1f4f2]/50 border-t border-b border-[#0E3B2E]/10" id="ediciones">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+<div>
+<span class="text-label-md text-[#b12500] uppercase tracking-widest block mb-2">Edición Limitada • Octubre / Noviembre</span>
+<h2 class="text-3xl md:text-5xl font-headline-lg text-[#0E3B2E]">El Viaje del Mes</h2>
+</div>
+<p class="text-body-md text-[#414845] max-w-md">
+          Una inmersión exclusiva de cupos reducidos acompañada por creadores e investigadores residentes.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#ffffff] rounded-xl p-6 md:p-10 border border-[#0E3B2E]/10 shadow-sm">
+<div class="lg:col-span-7 overflow-hidden rounded-lg aspect-[16/10] relative">
+<div class="bg-cover bg-center w-full h-full transform hover:scale-105 transition-transform duration-700" data-alt="A cinematic editorial photograph of an ancient stone terrace in the Sacred Valley of Peru overlooking dramatic mist-covered green mountains under soft morning light. The composition features a vintage leather journal and a hardcover book resting on a rustic wooden table with a ceramic cup of herbal infusion. The color palette centers on deep pine greens, warm sand tones, and subtle terracotta accents. The atmosphere is quiet, contemplative, and deeply connected to nature and slow living." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB618oFByCOZPR4QaT9kverIan--gw_xH7fLBIJnJk8EPQye8KblvShnEPmYP-ySjb7j-zgtIT_Y3YHU0iWU--hqJCDR5jBdwu2yejk8n6jKhLfJe-w0ehlyTuLhF1kPhRtTiu9NSDFSeROMqGSZGHSw4JStCzJL2rKcoGBcW24pjoKJL01kn3L9GlV94UTaVDaZH4RT-LDTLI1xT9F5zX3iWL4Vfkb0HSaqK7plC-JHlyL1tRlbYd4AM1Nj-H_KlyZaeTYPaKm7m8')"></div>
+<div class="absolute top-4 left-4 bg-[#FFFBF5]/90 backdrop-blur-sm px-3 py-1 rounded text-label-md text-[#0E3B2E]">
+            Valle Sagrado, Perú
+          </div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-4 text-sm text-[#414845] mb-3 font-label-md">
+<span>7 Días</span>
+<span>•</span>
+<span>Máximo 6 viajeros</span>
+<span>•</span>
+<span>Historiadores locales</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-headline-md text-[#0E3B2E] mb-4">
+              Valle Sagrado fuera de ruta: Cartografía íntima y andenes perdidos
+            </h3>
+<p class="text-body-md text-[#414845] leading-relaxed mb-6">
+              Alejados de los circuitos convencionales, habitaremos casonas seculares restauradas en Urubamba. Compartiremos fogatas con cronistas andinos, exploraremos caminos prehispánicos al amparo de la luz del crepúsculo y dedicaremos las tardes a la lectura y la acuarela botánica.
+            </p>
+</div>
+<div class="pt-4 border-t border-[#0E3B2E]/10 flex items-center justify-between">
+<div>
+<span class="block text-label-sm text-[#414845]">Inversión por viajero</span>
+<span class="text-xl font-headline-md text-[#0E3B2E]">Desde $3,450 USD</span>
+</div>
+<a class="bg-[#0E3B2E] text-white px-6 py-3 rounded-lg font-label-md hover:bg-[#00241a] transition-all" href="#contacto">
+              Solicitar dossier
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 Estilos de Viaje -->
+<section class="py-24 px-4 md:px-layout-margin max-w-[1200px] mx-auto" id="manifiesto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-label-md text-[#b12500] uppercase tracking-widest block mb-2">Nuestras Rutas</span>
+<h2 class="text-3xl md:text-5xl font-headline-lg text-[#0E3B2E] mb-4">Tres maneras de habitar el mundo</h2>
+<p class="text-body-lg text-[#414845]">
+        Diseñamos cada travesía bajo principios de arquitectura sensible, gastronomía honesta y respeto absoluto por el tiempo interior.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-[#E8DCC6]/40 border border-[#0E3B2E]/15 rounded-xl p-8 flex flex-col justify-between transition-all hover:bg-[#E8DCC6]/70">
+<div>
+<div class="w-12 h-12 rounded-full bg-[#0E3B2E] text-white flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="text-2xl font-headline-md text-[#0E3B2E] mb-3">Lectura &amp; Silencio</h3>
+<p class="text-body-md text-[#414845] leading-relaxed mb-6">
+            Retiros literarios en calas secretas del Mediterráneo y refugios cordilleranos. Espacios donde el único imperativo es la lectura sosegada frente al fuego o el mar.
+          </p>
+</div>
+<ul class="space-y-2 text-sm text-[#0E3B2E] font-label-md border-t border-[#0E3B2E]/10 pt-4">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Bibliotecas curatoriales privadas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Talleres de escritura y edición</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Aislamiento acústico y natural</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#E8DCC6]/40 border border-[#0E3B2E]/15 rounded-xl p-8 flex flex-col justify-between transition-all hover:bg-[#E8DCC6]/70">
+<div>
+<div class="w-12 h-12 rounded-full bg-[#0E3B2E] text-white flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">wine_bar</span>
+</div>
+<h3 class="text-2xl font-headline-md text-[#0E3B2E] mb-3">Slow Food &amp; Viñedos</h3>
+<p class="text-body-md text-[#414845] leading-relaxed mb-6">
+            Rutas gastronómicas de baja intervención en valles ancestrales. Encuentros íntimos con agricultores, bodegueros biodinámicos y cocineros herederos de saberes locales.
+          </p>
+</div>
+<ul class="space-y-2 text-sm text-[#0E3B2E] font-label-md border-t border-[#0E3B2E]/10 pt-4">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Cenas clandestinas con chefs de autor</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Visitas a viñedos de mínima intervención</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Talleres de cocina de tierra</li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="bg-[#E8DCC6]/40 border border-[#0E3B2E]/15 rounded-xl p-8 flex flex-col justify-between transition-all hover:bg-[#E8DCC6]/70">
+<div>
+<div class="w-12 h-12 rounded-full bg-[#0E3B2E] text-white flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<h3 class="text-2xl font-headline-md text-[#0E3B2E] mb-3">Arquitectura &amp; Territorio</h3>
+<p class="text-body-md text-[#414845] leading-relaxed mb-6">
+            Casas de autor suspendidas en acantilados y refugios de diseño brutalista mimetizados con el paisaje. Estancias donde la forma arquitectónica dialoga con el horizonte.
+          </p>
+</div>
+<ul class="space-y-2 text-sm text-[#0E3B2E] font-label-md border-t border-[#0E3B2E]/10 pt-4">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Acceso a obras arquitectónicas privadas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Conversatorios con los arquitectos</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">check</span> Diseño interior minimalista y cálido</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Sección de Prueba Social y Testimonios -->
+<section class="py-20 px-4 md:px-layout-margin bg-[#0E3B2E] text-[#ffffff]">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center max-w-xl mx-auto mb-16">
+<span class="text-label-md text-[#a3d0be] uppercase tracking-widest block mb-2">Reconocimientos</span>
+<h2 class="text-3xl md:text-4xl font-headline-lg text-[#ffffff]">Lo que dice la crítica y nuestros viajeros</h2>
+</div>
+<!-- Press Logos Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-80 mb-20 border-b border-[#ffffff]/10 pb-16">
+<span class="font-headline-md text-xl tracking-widest italic">EL PAÍS VIAJES</span>
+<span class="font-headline-md text-xl tracking-widest">ARCHITECTURAL DIGEST</span>
+<span class="font-headline-md text-xl tracking-widest italic">CONDÉ NAST SLOW</span>
+<span class="font-headline-md text-xl tracking-widest">REVISTA CARETAS</span>
+</div>
+<!-- Testimonials Carousel / Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-[#183a2f] p-8 rounded-xl border border-[#ffffff]/10 flex flex-col justify-between">
+<p class="font-body-lg text-lg italic text-[#eef1ef] mb-6 leading-relaxed">
+            "Viajar con ORILLA no se parece a nada que haya experimentado antes. Me devolvieron la capacidad de observar los detalles pequeños, de leer sin prisa frente al mar y de entender el territorio a través de su gente."
+          </p>
+<div>
+<h4 class="font-label-md text-[#a3d0be]">Mariana de Althaus</h4>
+<span class="text-sm text-[#c0c8c3]">Dramaturga y viajera en Oporto</span>
+</div>
+</div>
+<div class="bg-[#183a2f] p-8 rounded-xl border border-[#ffffff]/10 flex flex-col justify-between">
+<p class="font-body-lg text-lg italic text-[#eef1ef] mb-6 leading-relaxed">
+            "El nivel de curaduría estética y humana es extraordinario. Cada día tenía el ritmo exacto: espacio para la caminata, tiempo para la lectura y cenas memorables sin pretensiones."
+          </p>
+<div>
+<h4 class="font-label-md text-[#a3d0be]">Gonzalo Portocarrero</h4>
+<span class="text-sm text-[#c0c8c3]">Arquitecto e investigador</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto / CTA Section -->
+<section class="py-24 px-4 md:px-layout-margin max-w-[800px] mx-auto text-center" id="contacto">
+<span class="text-label-md text-[#b12500] uppercase tracking-widest block mb-2">Comienza tu viaje</span>
+<h2 class="text-3xl md:text-5xl font-headline-lg text-[#0E3B2E] mb-6">Diseñemos juntos tu próxima travesía</h2>
+<p class="text-body-lg text-[#414845] mb-10">
+      Cuéntanos sobre tus lecturas favoritas, el tiempo del que dispones y el tipo de silencio que buscas. Nos pondremos en contacto en menos de 24 horas.
+    </p>
+<form class="bg-[#E8DCC6]/30 border border-[#0E3B2E]/15 p-8 md:p-12 rounded-xl text-left space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-md text-[#0E3B2E] mb-2">Nombre completo</label>
+<input class="w-full bg-[#FFFBF5] border border-[#0E3B2E]/20 rounded p-3 text-on-surface focus:border-[#0E3B2E] focus:ring-0" placeholder="Ej. Lucía Morales" type="text"/>
+</div>
+<div>
+<label class="block text-label-md text-[#0E3B2E] mb-2">Correo electrónico</label>
+<input class="w-full bg-[#FFFBF5] border border-[#0E3B2E]/20 rounded p-3 text-on-surface focus:border-[#0E3B2E] focus:ring-0" placeholder="lucia@ejemplo.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md text-[#0E3B2E] mb-2">Estilo de viaje de interés</label>
+<select class="w-full bg-[#FFFBF5] border border-[#0E3B2E]/20 rounded p-3 text-on-surface focus:border-[#0E3B2E] focus:ring-0 font-body-sm">
+<option>Lectura &amp; Silencio</option>
+<option>Slow Food &amp; Viñedos</option>
+<option>Arquitectura &amp; Territorio</option>
+<option>Itinerario a medida</option>
+</select>
+</div>
+<div>
+<label class="block text-label-md text-[#0E3B2E] mb-2">Cuéntanos sobre tu viaje ideal</label>
+<textarea class="w-full bg-[#FFFBF5] border border-[#0E3B2E]/20 rounded p-3 text-on-surface focus:border-[#0E3B2E] focus:ring-0" placeholder="Destinos preferidos, fechas aproximadas, autores que te acompañan..." rows="4"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+<a class="inline-flex items-center gap-2 text-[#0E3B2E] font-label-md hover:text-[#b12500]" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>¿Prefieres hablar por WhatsApp ahora?</span>
+</a>
+<button class="w-full sm:w-auto bg-[#FF4D23] text-white px-8 py-3 rounded-lg font-label-md hover:bg-[#b12500] transition-all" onclick="alert('Gracias por escribirnos. Nos pondremos en contacto pronto.')" type="button">
+          Enviar consulta
+        </button>
+</div>
+</form>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f1f4f2] border-t border-[#0E3B2E]/10 mt-auto" id="diario">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-layout-margin py-12 max-w-[1200px] mx-auto gap-6">
+<div class="text-center md:text-left">
+<span class="text-headline-md font-headline-md text-[#0E3B2E] block mb-2">ORILLA</span>
+<p class="text-body-sm text-[#414845] max-w-sm">
+          © ORILLA. Todos los derechos reservados. Un espacio para la lectura lenta y el diseño editorial.
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-label-md text-sm text-[#414845]">
+<a class="hover:text-[#b12500] transition-colors" href="#manifiesto">Manifiesto</a>
+<a class="hover:text-[#b12500] transition-colors" href="#ediciones">Suscripciones</a>
+<a class="hover:text-[#b12500] transition-colors" href="#contacto">Prensa</a>
+<a class="hover:text-[#b12500] transition-colors" href="#contacto">Aviso Legal</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a aria-label="WhatsApp" class="fixed bottom-6 right-6 z-50 bg-[#0E3B2E] text-white p-4 rounded-full shadow-lg hover:bg-[#00241a] transition-all flex items-center justify-center" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</a>
+<!-- Script for Mobile Menu Toggle -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+<section id="feat-tours-cta" class="feat-wrap"><h2>Explora tours</h2><p class="muted">Listado con filtros y fichas individuales.</p><p><a class="cta" href="/tours">Ver tours</a> <a class="cta" href="/reserva" style="margin-left:.4rem;background:transparent;color:inherit;border:1px solid currentColor">Reservar</a></p></section>
+</body></html>

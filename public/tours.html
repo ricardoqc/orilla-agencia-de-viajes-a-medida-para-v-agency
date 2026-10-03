@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tours — ORILLA</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/feature.css" />
+</head>
+<body data-brand="ORILLA">
+  <header class="top feat-top">
+    <a class="brand" href="/">ORILLA</a>
+    <nav><a href="/">Inicio</a><a href="/tours">Tours</a><a href="/reserva">Reserva</a><a href="/contacto">Contacto</a></nav>
+    <a class="cta" href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+  
+  <section class="feat-hero">
+    <div class="feat-wrap" style="padding-top:0;padding-bottom:0">
+      <h1>Tours</h1>
+      <p>Viajes curados · filtra por destino, duración, estilo y precio.</p>
+    </div>
+  </section>
+  <section class="feat-wrap">
+    <div class="filters" id="filters">
+      <label>Destino
+        <select id="f-dest"><option value="">Todos</option></select>
+      </label>
+      <label>Estilo
+        <select id="f-style"><option value="">Todos</option></select>
+      </label>
+      <label>Duración máx (días)
+        <input id="f-days" type="number" min="1" placeholder="ej. 5" />
+      </label>
+      <label>Precio máx (USD)
+        <input id="f-price" type="number" min="0" step="10" placeholder="ej. 1000" />
+      </label>
+    </div>
+    <div id="tour-grid" class="tour-grid"></div>
+    <p id="empty" class="muted hidden">No hay tours con esos filtros.</p>
+  </section>
+  <script src="/tours.js"></script>
+
+  <footer class="feat-footer">
+    <p><strong>ORILLA</strong></p>
+    <p class="muted">Viaja menos lejos. Llega más hondo.</p>
+  </footer>
+  <a id="wa-float" href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
